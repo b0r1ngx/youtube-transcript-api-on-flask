@@ -73,7 +73,7 @@ def get_transcript():
     else:
         return "type parameter not found", 400
 
-    return {'transcript': transcript}
+    return {'transcript': transcript.fetch()}
 
 
 if __name__ == '__main__':
